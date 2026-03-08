@@ -1,0 +1,25 @@
+package github.com.nbtpackets.database;
+
+import github.com.nbtpackets.glow.GlowColor;
+import github.com.nbtpackets.model.Clan;
+import github.com.nbtpackets.perm.ClanPerm;
+
+import java.util.Map;
+import java.util.UUID;
+import java.util.concurrent.CompletableFuture;
+
+public interface Db {
+    CompletableFuture<Map<String, Clan>> loadAll();
+    void saveClan(Clan clan);
+    void deleteClan(String name);
+    void addMember(String clanName, UUID uuid);
+    void removeMember(UUID uuid);
+    void setMemberGlowColor(UUID uuid, GlowColor color);
+    void removeMemberGlowColor(UUID uuid);
+    void addMemberPerm(UUID uuid, String permKey);
+    void removeMemberPerm(UUID uuid, String permKey);
+    void removeMemberPerms(UUID uuid);
+    default void addMemberPerm(UUID uuid, ClanPerm perm) {addMemberPerm(uuid, perm.name());}
+    default void removeMemberPerm(UUID uuid, ClanPerm perm) {removeMemberPerm(uuid, perm.name());}
+    void close();
+}

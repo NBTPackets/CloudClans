@@ -1,0 +1,13 @@
+name: CloudClans
+version: '${project.version}'
+main: github.com.nbtpackets.CloudClans
+api-version: '1.20'
+load: STARTUP
+author: [ Noiryyy ]
+website: https://github.com/nbtpackets
+depend: [CloudLibsAPI, Vault, PlaceholderAPI, packetevents]
+libraries:
+  - com.zaxxer:HikariCP:7.0.1
+
+commands:
+  clan:
