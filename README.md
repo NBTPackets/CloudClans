@@ -32,7 +32,7 @@
 <dependency>
     <groupId>com.github.NBTPackets</groupId>
     <artifactId>CloudClans</artifactId>
-    <version>1.0.0</version> <!-- укажите актуальную версию -->
+    <version>1.0</version> <!-- укажите актуальную версию -->
     <scope>provided</scope>
 </dependency>
 ```
@@ -50,7 +50,7 @@ dependencyResolutionManagement {
 
 ```groovy
 dependencies {
-    implementation 'com.github.NBTPackets:CloudClans:1.0.0' // укажите актуальную версию
+    implementation 'com.github.NBTPackets:CloudClans:1.0' // укажите актуальную версию
 }
 ```
 
