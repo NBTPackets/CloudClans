@@ -294,30 +294,30 @@ public class ClanHomesAddon extends AbstractAddon {
 
 ### Структура аддона:
 ```
-MyAddon/
+src/main/java/addon.primer.yooooy
 ├── addon.yml
-└── MyAddon.jar
+└── PidoronAddon.jar
 ```
 
 ### addon.yml:
 ```yaml
-name: MyAddon
-version: 1.0.0
-main: com.example.MyAddon
+name: PidoronAddon
+version: 1.0
+main: addon.primer.yooooy.PidoronAddon
 ```
 
 ### Главный класс:
 ```java
-package com.example;
+package addon.primer.yooooy;
 
 import github.com.nbtpackets.addon.AbstractAddon;
 import github.com.nbtpackets.api.AddonAPI;
 
-public class MyAddon extends AbstractAddon {
+public class PidoronAddon extends AbstractAddon {
 
     @Override
     protected void onEnable() {
-        getLogger().info("MyAddon включен!");
+        getLogger().info("Че читаешь? Не читай...");
         
         // регистрация функционала
         AddonAPI.registerSubCommand(new MyCommand());
@@ -326,7 +326,7 @@ public class MyAddon extends AbstractAddon {
 
     @Override
     protected void onDisable() {
-        getLogger().info("MyAddon выключен!");
+        getLogger().info("Прочитал гей!");
     }
 
     private void handleAction(Player player, String arg, Map<String, Object> ctx) {
@@ -335,7 +335,7 @@ public class MyAddon extends AbstractAddon {
 }
 ```
 
-Поместите jar аддона в папку `plugins/CloudClans/addons/`
+Поместите jar аддона в папку `plugins/CloudClans/addons/` Надеюсь это понятно же?
 
 # Зависимости
 
