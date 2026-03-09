@@ -109,18 +109,11 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>github.com.nbtpackets</groupId>
+            <groupId>com.github.NBTPackets</groupId>
             <artifactId>CloudLibsAPI</artifactId>
-            <version>1.0.0-RELEASE</version>
-            <scope>system</scope>
-            <systemPath>C:\Users\Noiryyy\Desktop\Plugins\CloudLibsAPI\target\CloudLibsAPI-1.0.0-RELEASE.jar</systemPath>
+            <version>1.0.0</version>
+            <scope>provided</scope>
         </dependency>
-        <!--        <dependency>
-                            <groupId>com.github.NBTPackets</groupId>
-                            <artifactId>CloudLibsAPI</artifactId>
-                            <version>1.0.0-RELEASE</version>
-                            <scope>provided</scope>
-                        </dependency> -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
